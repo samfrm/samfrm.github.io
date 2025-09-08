@@ -8,16 +8,16 @@
       (function () {
         try {
           const ls = localStorage.getItem("theme");
-          const prefersDark = window.matchMedia(
-            "(prefers-color-scheme: dark)"
-          ).matches;
-          if (ls === "dark" || (!ls && prefersDark)) {
+          if (ls === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            // Default to dark when no preference is stored
             document.documentElement.classList.add("dark");
           }
         } catch (_) {}
       })();
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/tailwind.css" rel="stylesheet" />
     <meta
       name="description"
       content="Sam — Senior Full‑Stack Engineer & Startup Founder. Minimal portfolio."
@@ -52,11 +52,11 @@
               <rect x="9" y="9" width="6" height="6" />
             </svg>
           </div>
-          <span class="font-mono text-sm">samfrm</span>
+          <span class="font-mono text-sm">Sam Farahmand</span>
         </div>
         <div class="flex items-center gap-2">
           <a
-            href="https://github.com/samfrm/reflex"
+            href="https://github.com/samfrm"
             target="_blank"
             rel="noreferrer"
             class="inline-flex items-center gap-2 rounded px-3 py-1.5 text-sm font-medium border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition"
@@ -414,10 +414,10 @@
       <footer
         class="py-10 text-xs text-neutral-500 dark:text-neutral-400 flex items-center justify-between"
       >
-        <span class="font-mono">© <span id="year"></span> samfrm</span>
+        <span class="font-mono">© <span id="year"></span> samfrmd</span>
         <a
           class="inline-flex items-center gap-1 underline-offset-4 hover:underline"
-          href="https://github.com/samfrm/reflex"
+          href="https://samfrmd.com"
           target="_blank"
           rel="noreferrer"
         >
