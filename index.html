@@ -145,7 +145,7 @@
     <section class="py-6">
       <div class="border border-neutral-200 dark:border-neutral-800 rounded-xl">
         <div class="px-5 pt-4">
-          <div class="text-base font-mono text-neutral-600 dark:text-neutral-300">
+          <div class="text-base font-mono text-neutral-600 dark:text-neutral-500">
             philosophy.txt
           </div>
         </div>
@@ -163,7 +163,6 @@
     <!-- work -->
     <section id="work" class="py-10 space-y-6">
       <h2 class="text-xl sm:text-2xl font-semibold flex items-center gap-2">
-        <!-- sparkles -->
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" />
@@ -173,31 +172,34 @@
         Selected Work
       </h2>
 
-      <div class="grid sm:grid-cols-2 gap-5">
-        <article class="border border-neutral-200 dark:border-neutral-800 rounded-xl group">
-          <div class="px-5 pt-4">
-            <div class="flex items-center justify-between gap-3">
-              <h3 class="font-semibold">
-                Reflex<br>Local Referrer Attribution Tester
+      <div class="grid sm:grid-cols-2 gap-5 items-stretch">
+        <article
+          class="flex flex-col border border-neutral-200 dark:border-neutral-800 rounded-xl group transition-colors hover:border-neutral-300 dark:hover:border-neutral-700">
+          <div class="p-5 flex flex-col h-full">
+            <div class="flex flex-col gap-3 mb-4">
+              <h3 class="text-lg font-bold leading-tight">
+                Reflex
+                <span class="block text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-0.5">
+                  Local Referrer Attribution Tester
+                </span>
               </h3>
-              <span
-                class="hidden sm:inline-flex items-center gap-1 font-mono text-[11px] text-neutral-500 dark:text-neutral-400">
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">CLI</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">HTTPS</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">DX</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">Testing</span>
-              </span>
+              <div
+                class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">CLI</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">HTTPS</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">DX</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">Testing</span>
+              </div>
             </div>
-          </div>
-          <div class="px-5 pb-5 space-y-4">
-            <p class="text-sm text-neutral-700 dark:text-neutral-300">
-              A tiny CLI that spins up a trusted HTTPS origin to simulate real
-              referrers (e.g., news.google.com) and redirect cleanly into your
-              app. Punchy, surgical, five‑minute fix.
+
+            <p class="text-sm text-neutral-700 dark:text-neutral-300 mb-6 flex-grow">
+              A tiny CLI that spins up a trusted HTTPS origin to simulate real referrers (e.g., news.google.com) and
+              redirect cleanly into your app.
             </p>
-            <div class="flex items-center gap-3">
+
+            <div class="mt-auto pt-4">
               <a href="https://github.com/samfrm/reflex" target="_blank" rel="noreferrer"
-                class="inline-flex items-center gap-2 rounded-md border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                class="inline-flex items-center gap-2 rounded-md border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path
                     d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58l-.01-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.23 1.84 1.23 1.08 1.85 2.84 1.32 3.53 1.01.11-.8.42-1.32.76-1.63-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.36 1.23-3.19-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.22a11.5 11.5 0 0 1 6.01 0c2.29-1.54 3.3-1.22 3.3-1.22.66 1.65.24 2.87.12 3.17.77.83 1.23 1.9 1.23 3.19 0 4.59-2.82 5.59-5.5 5.89.43.37.81 1.1.81 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
@@ -208,29 +210,33 @@
           </div>
         </article>
 
-
-        <article class="border border-neutral-200 dark:border-neutral-800 rounded-xl group">
-          <div class="px-5 pt-4">
-            <div class="flex items-center justify-between gap-3">
-              <h3 class="font-semibold">
-                Angarium<br>A lightweight GPU job queue for small clusters
+        <article
+          class="flex flex-col border border-neutral-200 dark:border-neutral-800 rounded-xl group transition-colors hover:border-neutral-300 dark:hover:border-neutral-700">
+          <div class="p-5 flex flex-col h-full">
+            <div class="flex flex-col gap-3 mb-4">
+              <h3 class="text-lg font-bold leading-tight">
+                Angarium
+                <span class="block text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-0.5">
+                  Distributed GPU Job Queue
+                </span>
               </h3>
-              <span
-                class="hidden sm:inline-flex items-center gap-1 font-mono text-[11px] text-neutral-500 dark:text-neutral-400">
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">CLI</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">HTTPS</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">GPU</span>
-                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-2 py-0.5">Queue</span>
-              </span>
+              <div
+                class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">CLI</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">HTTPS</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">GPU</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">Queue</span>
+              </div>
             </div>
-          </div>
-          <div class="px-5 pb-5 space-y-4">
-            <p class="text-sm text-neutral-700 dark:text-neutral-300">
-              A lightweight GPU job queue for small clusters (5–100 GPUs) that replaces SSH chaos.
+
+            <p class="text-sm text-neutral-700 dark:text-neutral-300 mb-6 flex-grow">
+              A lightweight GPU job queue for small clusters (5–100 GPUs) that replaces SSH chaos with a centralized
+              controller.
             </p>
-            <div class="flex items-center gap-3">
+
+            <div class="mt-auto pt-4">
               <a href="https://github.com/angariumd/angarium" target="_blank" rel="noreferrer"
-                class="inline-flex items-center gap-2 rounded-md border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                class="inline-flex items-center gap-2 rounded-md border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path
                     d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58l-.01-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.23 1.84 1.23 1.08 1.85 2.84 1.32 3.53 1.01.11-.8.42-1.32.76-1.63-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.36 1.23-3.19-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.22a11.5 11.5 0 0 1 6.01 0c2.29-1.54 3.3-1.22 3.3-1.22.66 1.65.24 2.87.12 3.17.77.83 1.23 1.9 1.23 3.19 0 4.59-2.82 5.59-5.5 5.89.43.37.81 1.1.81 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
@@ -240,10 +246,46 @@
             </div>
           </div>
         </article>
+
+        <article
+          class="flex flex-col border border-neutral-200 dark:border-neutral-800 rounded-xl group transition-colors hover:border-neutral-300 dark:hover:border-neutral-700">
+          <div class="p-5 flex flex-col h-full">
+            <div class="flex flex-col gap-3 mb-4">
+              <h3 class="text-lg font-bold leading-tight">
+                Angarium Web
+                <span class="block text-sm font-medium text-neutral-500 dark:text-neutral-400 mt-0.5">
+                  Dashboard for Angarium
+                </span>
+              </h3>
+              <div
+                class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">React</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">Tailwind</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">TypeScript</span>
+                <span class="rounded border border-neutral-200 dark:border-neutral-800 px-1.5 py-0.5">Dashboard</span>
+              </div>
+            </div>
+
+            <p class="text-sm text-neutral-700 dark:text-neutral-300 mb-6 flex-grow">
+              Management interface for the Angarium Distributed Computing Platform.
+            </p>
+
+            <div class="mt-auto pt-4">
+              <a href="https://github.com/angariumd/angarium" target="_blank" rel="noreferrer"
+                class="inline-flex items-center gap-2 rounded-md border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58l-.01-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.23 1.84 1.23 1.08 1.85 2.84 1.32 3.53 1.01.11-.8.42-1.32.76-1.63-2.66-.3-5.47-1.33-5.47-5.9 0-1.3.47-2.36 1.23-3.19-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.22a11.5 11.5 0 0 1 6.01 0c2.29-1.54 3.3-1.22 3.3-1.22.66 1.65.24 2.87.12 3.17.77.83 1.23 1.9 1.23 3.19 0 4.59-2.82 5.59-5.5 5.89.43.37.81 1.1.81 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+                </svg>
+                Repo
+              </a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <!-- Contact CTA -->
     <section class="py-16">
       <div class="border border-neutral-200 dark:border-neutral-800 rounded-xl">
         <div class="px-5 py-8">
@@ -281,12 +323,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-10 text-xs text-neutral-500 dark:text-neutral-400 flex items-center justify-between">
       <span class="font-mono">© <span id="year"></span> samfrmd</span>
       <a class="inline-flex items-center gap-1 underline-offset-4 hover:underline" href="https://samfrmd.com"
         target="_blank" rel="noreferrer">
-        <!-- link icon -->
         <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M10 13a5 5 0 0 1 7 0l1 1a5 5 0 0 1-7 7l-1-1" />
@@ -298,10 +338,8 @@
   </main>
 
   <script>
-    // Year stamp
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Theme toggle
     const btn = document.getElementById("themeToggle");
     const icon = document.getElementById("themeIcon");
     const setIcon = () => {
